@@ -1,6 +1,6 @@
 # Casdoor for Railway: the official image, pinned by version and digest (multi-arch index).
 # Bump both together, and add a CHANGELOG.md entry: a merge to main notifies every deployer.
-FROM casbin/casdoor:4.29.0@sha256:d8fd4f387026e1ffdf887b924c1c74ad5c15e8d3be54fb739b57b2037073a51f
+FROM casbin/casdoor:4.30.0@sha256:97305c39e379c9417468be1df82582bb46bff9cbaf11b8d5f5e41dc601a5f63d
 
 COPY start.sh /railway-start.sh
 USER root

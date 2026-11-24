@@ -4,7 +4,7 @@
 
 This repo builds the [Casdoor](https://casdoor.org) service of the Railway template [Casdoor](https://railway.com/deploy/casdoor-1): an open-source identity and access management server (OAuth 2.0, OIDC, SAML, CAS, LDAP) with a web UI.
 
-- **Version:** Casdoor 4.29.0, official image `casbin/casdoor:4.29.0` pinned by digest in the [`Dockerfile`](Dockerfile).
+- **Version:** Casdoor 4.30.0, official image `casbin/casdoor:4.30.0` pinned by digest in the [`Dockerfile`](Dockerfile).
 - **Services:** `casdoor` (built from this repo, public domain on port 8000, health check `/api/health`) and Railway Postgres (with a volume). Casdoor keeps all its state in Postgres.
 - **Wrapper:** [`start.sh`](start.sh) sets `httpport` from `PORT`, defaults `runmode=prod`, `driverName=postgres` and `origin=https://$RAILWAY_PUBLIC_DOMAIN`, and passes `CASDOOR_ADMIN_PASSWORD` to Casdoor's `initAdminPassword`, then runs `/server`.
 
